@@ -13,4 +13,4 @@ OpenCV: For real-time image processing and webcam input.
 TensorFlow/Keras: Used for building and training the deep learning model.
 MobileNetV2: A lightweight convolutional neural network model used for feature extraction.
 Render: Cloud platform for deployment, providing easy access and scalability.
-The application is deployed on Render. You can access it directly via https://face-emotion-detection-tlearning.onrender.com
+The application is deployed on Render. You can access it directly via https://face-emotion-recognition-uetp.onrender.com
