@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Face Emotion Recognition</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <h1>Upload an Image for Emotion Detection</h1>-->
+<!--    <form action="/predict" method="post" enctype="multipart/form-data">-->
+<!--        <input type="file" name="file" accept="image/*">-->
+<!--        <button type="submit">Predict Emotion</button>-->
+<!--    </form>-->
+<!--    <div id="result"></div>-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Emotion Recognition</title>
+    <!-- Link to Google Fonts for custom fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600&display=swap" rel="stylesheet">
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Face Emotion Recognition</h1>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*" required>
+            <button type="submit" class="upload-btn">Predict</button>
+        </form>
+        <img id="spinner" src="{{ url_for('static', filename='spinner.gif') }}" alt="Loading..." width="50">
+        <div id="result"></div>
+    </div>
+
+    <!-- Link to external JavaScript -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
